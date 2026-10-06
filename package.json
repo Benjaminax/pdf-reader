@@ -1,0 +1,46 @@
+{
+  "name": "pdf-book-reader",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "PDF Reader as a book: horizontal double-page view with page-turning effect. Web + desktop (PWA).",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:client": "vite",
+    "dev:server": "node server/index.js",
+    "build": "vite build",
+    "start": "NODE_ENV=production node server/index.js",
+    "start:win": "set NODE_ENV=production&& node server/index.js",
+    "preview": "vite preview",
+    "icons": "node scripts/generate-icons.mjs",
+    "test:e2e": "node scripts/smoke-test.mjs"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/cli": "^8.5.2",
+    "@capacitor/core": "^8.5.2",
+    "dotenv": "^18.0.5",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.6.2",
+    "helmet": "^8.3.0",
+    "mongoose": "^9.11.0",
+    "pdfjs-dist": "^4.2.67",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-pageflip": "^2.0.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "concurrently": "^9.1.2",
+    "pdf-lib": "^1.17.1",
+    "puppeteer-core": "^25.4.0",
+    "sharp": "^0.35.3",
+    "vite": "^6.4.3",
+    "vite-plugin-pwa": "^0.21.1",
+    "workbox-window": "^7.4.1"
+  },
+  "overrides": {
+    "serialize-javascript": "^7.0.5",
+    "tar": "^7.5.21"
+  }
+}

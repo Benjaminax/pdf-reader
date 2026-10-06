@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">PAGE.verse PDF Reader</string>
+    <string name="title_activity_main">PAGE.verse PDF Reader</string>
+    <string name="package_name">com.pageverse.pdfreader</string>
+    <string name="custom_url_scheme">com.pageverse.pdfreader</string>
+</resources>

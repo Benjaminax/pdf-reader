@@ -1,0 +1,8 @@
+{
+  "appId": "com.pageverse.pdfreader",
+  "appName": "PAGE.verse PDF Reader",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}

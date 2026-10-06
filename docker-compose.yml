@@ -1,0 +1,13 @@
+services:
+  pdf-reader:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pdf-reader
+    restart: unless-stopped
+    ports:
+      - "172.17.0.1:2077:2077"
+    environment:
+      - NODE_ENV=production
+      - PORT=2077
+      - TRUST_PROXY=1
